@@ -1,8 +1,8 @@
 <template>
   <div class="home" fill jc ac>
-      <file-picker wd-md ht-md ba dashed ac-10 bv @drop="drop" @select="select">
+      <files wd-md ht-md ba dashed ac-10 bv image single @drop="drop" @select="select">
 
-      </file-picker>
+      </files>
 <!--      <div wd-lg ht-lg>-->
 <!--          <input ref="input" type="file" :value="val" multiple="true" @change="change">-->
 <!--      </div>-->
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import filePicker from "./filePicker";
+import files from "./files";
 export default {
     name: 'HomeView',
     data(){
@@ -19,7 +19,7 @@ export default {
         }
     },
     components: {
-        filePicker
+        files
     },
     mounted() {
 

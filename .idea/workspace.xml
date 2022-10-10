@@ -20,20 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15d97a5e-4940-45cd-bf41-52aa6e0464be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/http/headers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/http/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/http/interceptors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/style-in-attributes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/style-in-attributes/src/border.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/style-in-attributes/src/color.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/style-in-attributes/src/flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/style-in-attributes/src/padding&amp;margin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/style-in-attributes/src/test.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/style-in-attributes/src/text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/style-in-attributes/src/theme.light.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/plugins/style-in-attributes/src/width&amp;height.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/filePicker/filePicker.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/filePicker/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/files/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/HomeView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/filePicker/filePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/files/files.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/filePicker/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/dev/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +56,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/src/plugins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -85,6 +78,7 @@
       <workItem from="1665301836323" duration="751000" />
       <workItem from="1665365352652" duration="7054000" />
       <workItem from="1665380188460" duration="10116000" />
+      <workItem from="1665406316565" duration="7924000" />
     </task>
     <servers />
   </component>
