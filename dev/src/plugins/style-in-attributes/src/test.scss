@@ -1,0 +1,14 @@
+[foo]{
+  background-color: rgba(200,0,0,.2);
+}
+[bar]{
+  background: rgba(0,200,0,.2);
+}
+[foo][bar]{
+  position: relative;
+  &::before{
+    position: absolute;left: 0;top: 0;content: '';width:100%;height:100%;
+    background: rgba(0,0,200,.2);
+  }
+
+}

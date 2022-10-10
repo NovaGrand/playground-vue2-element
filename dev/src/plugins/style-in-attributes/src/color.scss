@@ -1,0 +1,21 @@
+*{
+  --c: null; // color
+  --ac: 25;  // alpha-number
+  color: rgba(var(--c), calc(0.04 * var(--ac)));
+}
+body{
+  color: rgba(32,32,32, calc(0.04 * var(--ac)));
+  --theme:32,32,32;
+  //--theme: null;
+  background-color: inherit;
+}
+
+// alpha-channel 透明度控制
+@for $i from 1 through 25{ [alpha-#{$i}],[ac-#{$i}]{ --c:var(--theme);--ac:#{$i} } }
+
+[bg]{
+  color: white;
+  background-color: rgba(var(--c), calc(0.04 * var(--ac)));
+}
+
+@import 'theme.light.scss';

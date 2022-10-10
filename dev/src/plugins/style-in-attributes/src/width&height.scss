@@ -1,0 +1,37 @@
+// 段位 + 步伐 + 步数
+// 需要实现 fill wd-1 这种宽高控制
+*{
+  --w:0;--wx:4;--wn:null;
+  width:  calc(var(--w) * 1px + var(--wx) * var(--wn) * 1px);
+
+  --h:0;--hx:4;--hn:null;
+  height: calc(var(--h) * 1px + var(--hx) * var(--hn) * 1px);
+}
+[fill]{
+  --wx:0;--wn:0;
+  width: calc(var(--w) * 1px + var(--wx) * var(--wn) * 1px + 100%);
+  height: 100%;
+}
+
+[wd-xs]{ --w:90 ; --wx:3.46; --wn:0 }
+[wd-sm]{ --w:180; --wx:6.92; --wn:0 }
+[wd-md]{ --w:360; --wx:4.62; --wn:0 }
+[wd-lg]{ --w:480; --wx:9.23; --wn:0 }
+[wd-xl]{ --w:720; --wn:0 }
+
+[ht-xs]{ --h:30 ; --hx:3.46; --hn:0 }
+[ht-sm]{ --h:120; --hx:4.62; --hn:0 }
+[ht-md]{ --h:240; --hx:3.08; --hn:0 }
+[ht-lg]{ --h:320; --hx:6.15; --hn:0 }
+[ht-xl]{ --h:480; --hn:0 }
+@for $i from 1 through 25 {
+  [col-#{$i}]{
+    --wp:#{$i * 4 + '%'};--wn:0;
+    width:  calc(var(--w) * 1px + var(--wx) * var(--wn) * 1px + var(--wp));
+  }
+  [wd-#{$i}]{--wn:#{$i}}
+  [ht-#{$i}]{--hn:#{$i}}
+}
+
+
+

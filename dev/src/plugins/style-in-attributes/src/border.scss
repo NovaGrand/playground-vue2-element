@@ -1,0 +1,83 @@
+*{
+  --bt: null; --br:null; --bb: null; --bl:null; --bs:solid;
+  --adjust-border:0.04;
+  border-top:   calc(var(--bt) * 0.5px) var(--bs) rgba(var(--c), calc(var(--adjust-border) * var(--ac)));
+  border-right: calc(var(--br) * 0.5px) var(--bs) rgba(var(--c), calc(var(--adjust-border) * var(--ac)));
+  border-bottom:calc(var(--bb) * 0.5px) var(--bs) rgba(var(--c), calc(var(--adjust-border) * var(--ac)));
+  border-left:  calc(var(--bl) * 0.5px) var(--bs) rgba(var(--c), calc(var(--adjust-border) * var(--ac)));
+  --bdrd: null;
+  border-radius: var(--bdrd);
+
+  --shd: 0;// card 阴影
+}
+
+$grades: ( xs: 1, sm: 3, md: 4, lg: 5, xl: 6 );
+
+@each $key, $val in $grades {
+  [ba-#{$key}]{ --bt:#{$val}!important;--br:#{$val}!important;--bb:#{$val}!important;--bl:#{$val}!important }
+  [bt-#{$key}]{ --bt:#{$val}!important; }
+  [br-#{$key}]{ --br:#{$val}!important; }
+  [bb-#{$key}]{ --bb:#{$val}!important; }
+  [bl-#{$key}]{ --bl:#{$val}!important; }
+}
+[border],[ba],[bt],[br],[bb],[bl],[ba-xs],[ba-sm],[ba-md],[ba-lg],[ba-xl],[bt-xs],[bt-sm],[bt-md],[bt-lg],[bt-xl],[br-xs],[br-sm],[br-md],[br-lg],[br-xl],[bb-xs],[bb-sm],[bb-md],[bb-lg],[bb-xl],[bl-xs],[bl-sm],[bl-md],[bl-lg],[bl-xl]{
+  //--c:var(--theme);
+  //border-top:   calc(var(--bt) * 0.5px) var(--bs) rgba(var(--theme), calc(var(--adjust-border) * var(--ac)));
+  //border-right: calc(var(--br) * 0.5px) var(--bs) rgba(var(--theme), calc(var(--adjust-border) * var(--ac)));
+  //border-bottom:calc(var(--bb) * 0.5px) var(--bs) rgba(var(--theme), calc(var(--adjust-border) * var(--ac)));
+  //border-left:  calc(var(--bl) * 0.5px) var(--bs) rgba(var(--theme), calc(var(--adjust-border) * var(--ac)));
+}
+[ba],[border]{ --bt:1;--br:1;--bb:1;--bl:1 }
+[bt]{ --bt:1; }
+[br]{ --br:1; }
+[bb]{ --bb:1; }
+[bl]{ --bl:1; }
+[dashed]{--bs:dashed}
+[dotted]{--bs:dotted}
+
+[bevel],[bv]{overflow:hidden;--bdrd: 3px!important}
+[bv-xs]{overflow:hidden;--bdrd: 2px!important;}
+[bv-sm]{overflow:hidden;--bdrd: 3px!important;}
+[bv-md]{overflow:hidden;--bdrd: 4px!important;}
+[bv-lg]{overflow:hidden;--bdrd: 6px!important;}
+[bv-xl]{overflow:hidden;--bdrd: 8px!important;}
+[round]{overflow:hidden;--bdrd: 3000px!important;}
+[left]{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+[right]{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+[top]{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+[rect]{
+  --bdrd: 0!important;
+  border-radius: 0;
+}
+[bottom]{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+[card-xs],[card]{
+  box-shadow:var(--shd) 0 1px rgba(0,0,0,.08), var(--shd) .5px 2px rgba(0,0,0,.1),var(--shd) 1px 2px rgba(0,0,0,.1);
+}
+[card-sm]{
+  box-shadow:var(--shd) .5px 1.5px rgba(0,0,0,.12), var(--shd) .5px 2.5px rgba(0,0,0,.1), var(--shd) 1px 4px rgba(0,0,0,.1);
+}
+[card-md]{
+  box-shadow:var(--shd) 1px 2px rgba(0,0,0,.14), var(--shd) 1px 3px rgba(0,0,0,.1), var(--shd) 1px 6px rgba(0,0,0,.1);
+}
+[card-lg]{
+  box-shadow:var(--shd) 1.5px 2.5px rgba(0,0,0,.16), var(--shd) 1px 3.5px rgba(0,0,0,.1), var(--shd) 1px 8px rgba(0,0,0,.1);
+}
+[card-xl]{
+  box-shadow:var(--shd) 2px 3px rgba(0,0,0,.18), var(--shd) 1px 4px rgba(0,0,0,.1), var(--shd) 1px 10px rgba(0,0,0,.1);
+}
+[inset]{
+  --shd:inset 0;
+}

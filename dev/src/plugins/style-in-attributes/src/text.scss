@@ -1,0 +1,129 @@
+
+//字体大小
+//xs-fs 12 14 16 18 20
+//sm-fs 22 24 26 28 30
+//md-fs 32 34 36 38 40
+//lg-fs 42 44 46 48 50
+//xl-fs 52 54 56 58 60
+*{
+  --xfs:0;--fs:false;
+  font-size: calc( var(--xfs) * 1px + var(--fs) * 1px );
+
+  --xls:0;--ls:false;
+  letter-spacing: calc( var(--xls) * 1px + var(--ls) * .5px );
+
+  //--lh:false;
+  line-height: var(--lh);
+}
+
+//字体大小-BEGIN-
+[xl]{--xfs:30!important;--fs:0}
+[lg]{--xfs:24!important;--fs:0}
+[md]{--xfs:19!important;--fs:0}
+[sm]{--xfs:14!important;--fs:0}
+[xs]{--xfs:12!important;--fs:0}
+@for $i from 1 through 25 {
+  [fs-#{$i}]{
+    --fs:#{$i}!important
+  }
+}
+//字体大小-END-
+//行高-BEGIN-
+[lh-xs]{--lh:1.3}
+[lh-sm]{--lh:1.5}
+[lh-md]{--lh:1.8}
+[lh-lg]{--lh:1.9}
+[lh-xl]{--lh:2.0}
+//行高-END-
+//字体间距-BEGIN-
+[ls-xs] {--xls:1;--ls:0}
+[ls-sm] {--xls:2;--ls:0}
+[ls-md] {--xls:4;--ls:0}
+[ls-lg] {--xls:8;--ls:0}
+[ls-xl] {--xls:16;--ls:0}
+@for $i from 1 through 25 {
+  [ls-#{$i}]{
+    --ls:#{$i}
+  }
+}
+// 字间距属性-END-
+[indent]{
+  text-indent: 3em;
+}
+[bold] {
+  --font-weight: bold;
+  font-weight: var(--font-weight)
+}
+[italic]{
+  font-style: italic;
+}
+[ellipsis] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+//状态属性
+[success],[message],[caution],[warning],[failure]{
+  line-height: 1.8em;
+  font-family: 'mew';
+  position: relative;
+  border-radius: 4px;
+  padding: 0.6em 1.53em 0.75em 3.65em;
+  &::before{
+    top:0.65em;
+    height: 1em;line-height: 1em;
+    font-size: 1.3em;
+    display: inline-block;content: '';
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: absolute;
+  }
+}
+[success]{
+  color: #007f32;
+  background-color: #f4fcf2;
+  &::before {
+    left: 1.08em;top:0.7em;
+    content: "\e992";
+  }
+}
+[message]{
+  color: #00538d;
+  background-color: #e6f4ff;
+  &::before {
+    font-size: 1.4em;
+    left: .96em;
+    content: "\e994";
+  }
+}
+[caution]{
+  //color: #ff4c00;
+  //background-color: #ffefe5;
+  color: #00538d;
+  background-color: #e6f4ff;
+  &::before {
+    top:0.7em;
+    left: 1.1em;
+    content: "\e995";
+  }
+}
+[warning]{
+  color: #ff6100;
+  background-color: #fff8e8;
+  &::before {
+    left: 1.1em;top: .65em;
+    content: "\e997";
+  }
+}
+[failure]{
+  color: #db0000;
+  background-color: #ffe1e1;
+  &::before {
+    font-size: 1.15em;
+    left: 1.3em;top: .9em;
+    content: "\e993";
+  }
+}
+[noselect]{
+  user-select: none;
+}

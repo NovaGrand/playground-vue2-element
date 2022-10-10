@@ -1,0 +1,135 @@
+[red]{
+  --c: 190,0,0;
+  &[lighten]{
+    --c: 255,13,13
+  }
+  &[darken]{
+    --c: 130,0,0
+  }
+}
+[pink]{
+  --c:240,0,190; // #f000be
+  &[lighten]{
+    --c: 255,100,235;
+    &[bg]{
+      color:black
+    }
+  }
+  &[darken]{
+    --c: 152,0,120
+  }
+}
+[purple]{
+  --c:180,0,200;
+  &[lighten]{
+    --c: 222,29,255
+  }
+  &[darken]{
+    --c: 112,0,131
+  }
+}
+[orange]{
+  --c: 255,155,0;
+  &[lighten]{--c: 255,185,80; &[bg]{color:black}}
+  &[darken]{--c: 240,130,0}
+}
+[cyan]{
+  --c: 0,220,255; &[bg]{ color:black }
+  &[lighten]{
+    --c: 20,255,255; &[bg]{color:black}
+  }
+  &[darken]{
+    --c: 0,166,232; &[bg]{ color:white }
+  }
+}
+[green]{
+  //--c: 112,214,72;
+  --c: 0,200,0;
+  &[lighten]{
+    --c: 0,255,0;
+    &[bg]{
+      color:black
+    }
+  }
+  &[darken]{
+    --c: 0,150,0
+  }
+}
+[blue]{
+  --c: 0,150,255;
+  &[lighten]{
+    --c:60,175,255;
+  }
+  &[darken]{
+    --c: 0,120,230;
+  }
+}
+[indigo]{
+  --c: 0,100,165;
+  &[lighten]{
+    --c:0,120,185;
+  }
+  &[darken]{
+    --c:0,88,142;
+  }
+}
+[grey]{
+  --c: 145,152,170;
+  &[lighten]{ --c: 179,185,200;&[bg]{ color:black } }
+  &[darken]{ --c: 110,120,140; &[bg]{ color:white } }
+  //109,118,140
+}
+[black]{
+  --c: 55,55,55;
+  &[lighten]{
+    --c: 75,80,80;
+  }
+  &[darken]{
+    --c: 0,0,0
+  }
+}
+[yellow]{
+  --c: 255,240,0; &[bg]{ color:black }
+  &[lighten]{
+    --c: 255,250,115; &[bg]{ color:black }
+  }
+  &[darken]{
+    --c: 245,220,0; &[bg]{ color:black }
+  }
+}
+[catskill]{
+  --c:203,226,242; &[bg]{ color:black }
+  &[lighten]{
+    --c: 229,244,255;
+  }
+  &[darken]{
+    --c: 181,207,224;
+  }
+}
+[lake]{
+  --c: 95,240,215; &[bg]{ color:black }
+  &[lighten]{
+    --c: 135,255,235;
+  }
+  &[darken]{
+    --c: 68,226,197;
+  }
+}
+[white]{
+  --c: 245,245,245; &[bg]{ color:black }
+  &[lighten]{
+    --c: 255,255,255;
+  }
+  &[darken]{
+    --c: 235,235,235;
+  }
+}
+[golden]{
+  --c: 255,224,147; &[bg]{ color:rgb(30,30,30);text-shadow: 0 0 1px white; }
+  &[lighten]{
+    --c:255,235,191; &[bg]{ color:rgb(30,30,30) }
+  }
+  &[darken]{
+    --c:255,212,114; &[bg]{ color:rgb(30,30,30) }
+  }
+}

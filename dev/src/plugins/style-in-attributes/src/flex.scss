@@ -1,0 +1,45 @@
+[flex],[reverse],[column],[wrap],[js],[je],[jc],[jsb],[jsa],[ae],[ac],[as]{
+  display: flex;align-items: flex-start;justify-content: flex-start;
+}
+
+//[flex]{
+//  display: flex;align-items: flex-start;justify-content: flex-start;
+//}
+[reverse]{
+  flex-direction: row-reverse;
+}
+[column]{
+  flex-direction: column
+}
+[column][reverse]{
+  flex-direction: column-reverse;
+}
+[wrap]{
+  flex-wrap: wrap;
+}
+[js]{
+  justify-content: flex-start;
+}
+[je]{
+  justify-content: flex-end;
+}
+[jc]{
+  justify-content: center;
+}
+[jsb]{
+  justify-content: space-between;
+}
+[jsa]{
+  justify-content: space-around;
+}
+[ae] {
+  align-items: flex-end;
+}
+[ac]{
+  align-items: center;
+}
+[as]{
+  align-items: stretch;
+}
+
+
