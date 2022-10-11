@@ -1,16 +1,33 @@
 <template>
   <div class="home" fill jc ac>
-      <files wd-md ht-md ba dashed ac-10 bv image single @drop="drop" @select="select">
-
+      <files wd-md ht-md ba dashed ac-10 bv select
+             @drop="drop"
+      >
+            <div fill ac jc column>
+                <div>1.文件切块 OK</div>
+                <div>2.将块封装成 requestList</div>
+                <div>3.使用 promise.all 提交或轮询提交</div>
+            </div>
       </files>
-<!--      <div wd-lg ht-lg>-->
-<!--          <input ref="input" type="file" :value="val" multiple="true" @change="change">-->
-<!--      </div>-->
   </div>
 </template>
 
 <script>
 import files from "./files";
+function sliceFile(file, chunkSize) {
+    let amount = file.size % chunkSize === 0 ? file.size / chunkSize : Math.ceil(file.size / chunkSize)
+    let byteStart = 0;
+    let arr = [];
+
+    for (let i = 0;i < amount;i++) {
+        let byteEnd = byteStart + chunkSize
+        arr.push(file.slice(byteStart, byteEnd));
+        byteStart += (byteEnd - byteStart);
+    }
+
+    return arr;
+}
+
 export default {
     name: 'HomeView',
     data(){
@@ -26,6 +43,17 @@ export default {
     },
     methods:{
         drop(files){
+            console.log('------drop------')
+            let chunks = sliceFile(files[0],1024*1024*5)
+            let data = new FormData()
+
+            console.log(chunks)
+        },
+        chunk(file, size=1000){
+
+        },
+        change(files){
+            console.log('------change------')
             console.log(files)
         },
         // 生成文件切片
@@ -41,6 +69,7 @@ export default {
             return fileChunkList
         },
         select(files){
+            console.log('------select------')
             console.log(files)
             // const reader = new FileReader()
             // reader.readAsArrayBuffer(this.$refs.input.files[0],'utf8')
@@ -51,6 +80,10 @@ export default {
             //         console.log(result.data)
             //     })
             // }
+        },
+        error(files){
+            console.log('------error------')
+            console.log(files)
         },
         success(response, file, fileList){
             console.log(response)

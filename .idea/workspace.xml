@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15d97a5e-4940-45cd-bf41-52aa6e0464be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dev/src/views/files/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/HomeView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/filePicker/filePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/files/files.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/filePicker/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/dev/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/files/files.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/files/files.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serv/src/router/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/serv/src/router/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../HaoHai/emerg-command-ui-dev" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -79,6 +76,7 @@
       <workItem from="1665365352652" duration="7054000" />
       <workItem from="1665380188460" duration="10116000" />
       <workItem from="1665406316565" duration="7924000" />
+      <workItem from="1665450266751" duration="11888000" />
     </task>
     <servers />
   </component>
@@ -98,9 +96,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1061" y="456" key="FileChooserDialogImpl" timestamp="1665368107290">
+    <state x="1061" y="456" key="FileChooserDialogImpl" timestamp="1665478038155">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1665368107290" />
+    <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1665478038155" />
   </component>
 </project>
