@@ -10,6 +10,16 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+  {
+    path: '/big_file_upload',
+    name: 'big_file_upload',
+    component: ()=>import('@/views/bigFileUpload')
+  },
+  {
+    path: '/super_map',
+    name: 'super_map',
+    component: ()=>import('@/views/superMap')
+  },
   // {
   //   path: '/about',
   //   name: 'about',
