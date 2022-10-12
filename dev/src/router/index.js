@@ -20,6 +20,11 @@ const routes = [
     name: 'super_map',
     component: ()=>import('@/views/superMap')
   },
+  {
+    path: '/big_screen',
+    name: 'big_screen',
+    component: ()=>import('@/views/bigScreen')
+  },
   // {
   //   path: '/about',
   //   name: 'about',

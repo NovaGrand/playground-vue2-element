@@ -20,15 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15d97a5e-4940-45cd-bf41-52aa6e0464be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dev/src/views/bigFileUpload/bigFileUpload.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/bigFileUpload/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/superMap.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/bigScreen/bigScreen.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/bigScreen/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/HomeView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/files/files.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/bigFileUpload/files/files.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/files/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/bigFileUpload/files/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +54,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../HaoHai/emerg-command-ui" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bak/MewCC" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -87,6 +83,7 @@
       <workItem from="1665450266751" duration="11888000" />
       <workItem from="1665536723640" duration="1792000" />
       <workItem from="1665553873288" duration="20000" />
+      <workItem from="1665566850523" duration="5316000" />
     </task>
     <servers />
   </component>
@@ -106,9 +103,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1061" y="456" key="FileChooserDialogImpl" timestamp="1665553891307">
+    <state x="1061" y="456" key="FileChooserDialogImpl" timestamp="1665570368772">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1665553891307" />
+    <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1665570368772" />
   </component>
 </project>
