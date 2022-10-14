@@ -1,3 +1,5 @@
+// import './plugins/style-in-attributes'
+
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
@@ -10,7 +12,6 @@ Vue.use(ElementUI)
 import http from './plugins/http'
 Vue.use(http)
 
-import './plugins/style-in-attributes'
 
 Vue.config.productionTip = false
 

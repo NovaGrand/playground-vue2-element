@@ -20,11 +20,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15d97a5e-4940-45cd-bf41-52aa6e0464be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dev/src/views/bigScreen/bigScreen.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/bigScreen/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/prettier.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/controlBoard/controlBoard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/controlBoard/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/mixins/page.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/mixins/search.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/mock/oneKeyOperation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/oneKeyOperation/components/dateTime.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/oneKeyOperation/components/editRow.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/oneKeyOperation/components/eventLevel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/oneKeyOperation/components/href.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/oneKeyOperation/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/oneKeyOperation/oneKeyOperation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/oneKeyOperation/scss/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/taskManagement/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/taskManagement/taskManagement.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/command&amp;conduct/指挥调度目录说明.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/haohai/layout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/HomeView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/dev/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +55,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="2FtC8exu1Z9D0urLC6HFupZOWvy" />
   <component name="ProjectLevelVcsManager">
@@ -52,20 +78,26 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bak/MewCC" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettier.files.pattern" value="{**/*,*}.{js,ts,jsx,tsx,.vue}" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\ProgramFiles\nodejs\node_global\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\wangwei\Desktop\刘博\Git\NovaGrand\playground-vue2-element\dev\src\views\bigFileUpload" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wangwei\Desktop\刘博\Git\NovaGrand\playground-vue2-element\dev\src\views" />
       <recent name="C:\Users\wangwei\Desktop\刘博\Git\NovaGrand\playground-vue2-element\dev\src\plugins" />
       <recent name="C:\Users\wangwei\Desktop\刘博\Git\NovaGrand\playground-vue2-element\dev\src\plugins\style-in-attributes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wangwei\Desktop\刘博\Git\NovaGrand\playground-vue2-element\dev\src\views\haohai" />
+      <recent name="C:\Users\wangwei\Desktop\刘博\Git\NovaGrand\playground-vue2-element\dev\src\views\bigFileUpload" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -84,6 +116,13 @@
       <workItem from="1665536723640" duration="1792000" />
       <workItem from="1665553873288" duration="20000" />
       <workItem from="1665566850523" duration="5316000" />
+      <workItem from="1665621737305" duration="50000" />
+      <workItem from="1665621916321" duration="2984000" />
+      <workItem from="1665624935659" duration="8605000" />
+      <workItem from="1665639576399" duration="7499000" />
+      <workItem from="1665648600694" duration="5654000" />
+      <workItem from="1665657375154" duration="6805000" />
+      <workItem from="1665710805570" duration="6493000" />
     </task>
     <servers />
   </component>
@@ -103,9 +142,17 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1061" y="456" key="FileChooserDialogImpl" timestamp="1665570368772">
+    <state x="1061" y="456" key="FileChooserDialogImpl" timestamp="1665654491822">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1665570368772" />
+    <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1665654491822" />
+    <state x="649" y="589" key="SettingsEditor" timestamp="1665626149367">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="649" y="589" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1665626149367" />
+    <state x="1218" y="448" key="run.anything.popup" timestamp="1665663448886">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1218" y="448" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1665663448886" />
   </component>
 </project>

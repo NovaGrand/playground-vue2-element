@@ -1,12 +1,15 @@
 <template>
-  <div id="app" fill>
+  <div id="app">
     <router-view/>
   </div>
 </template>
 
 <style>
-body{
+html,body{
     height: 100vh;
+    width: 100vw;
+    padding: 0!important;
+    margin: 0;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -14,5 +17,8 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+    margin: 0;padding: 0;
+    height: 100vh;
+    width: 100vw;
 }
 </style>
