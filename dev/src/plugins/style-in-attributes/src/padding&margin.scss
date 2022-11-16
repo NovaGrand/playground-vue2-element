@@ -1,10 +1,10 @@
 *{
   --pt:0; --pr:0; --pb:0; --pl:0;
   --xpt:0; --xpr:0; --xpb:0; --xpl:0;
-  padding: calc( var(--pt) * 1px + var(--xpt) * 1px )
-           calc( var(--pr) * 1px + var(--xpr) * 1px )
-           calc( var(--pb) * 1px + var(--xpb) * 1px )
-           calc( var(--pl) * 1px + var(--xpl) * 1px );
+  padding: calc( var(--pt) * 1px + var(--xpt) * var(--p) * 1px )
+           calc( var(--pr) * 1px + var(--xpr) * var(--p) * 1px )
+           calc( var(--pb) * 1px + var(--xpb) * var(--p) * 1px )
+           calc( var(--pl) * 1px + var(--xpl) * var(--p) * 1px );
   --mt:0; --mr:0; --mb:0; --ml:0;
   --xmt:0; --xmr:0; --xmb:0; --xml:0;
   margin:
@@ -13,7 +13,7 @@
           calc( var(--mb) * 1px + var(--xmb) * 1px )
           calc( var(--ml) * 1px + var(--xml) * 1px );
 
-  --nx:0; --ny:0;--fd:0;
+  --nx:0; --ny:0;
   --xnx:0; --xny:0;
   transform:
           translateX(calc( var(--nx) * 1px + var(--xnx) * .5px ))
@@ -29,13 +29,13 @@ $grades: (
 );
 // 段位尺寸
 @each $key, $val in $grades {
-  [px-#{$key}]{ --pr:#{$val};--pl:#{$val}; }
-  [py-#{$key}]{ --pt:#{$val};--pb:#{$val}; }
-  [pa-#{$key}]{ --pt:#{$val};--pr:#{$val};--pb:#{$val};--pl:#{$val} }
-  [pt-#{$key}]{ --pt:#{$val} }
-  [pr-#{$key}]{ --pr:#{$val} }
-  [pb-#{$key}]{ --pb:#{$val} }
-  [pl-#{$key}]{ --pl:#{$val} }
+  [px-#{$key}]{ --p:1; --pr:#{$val};--pl:#{$val}; }
+  [py-#{$key}]{ --p:1; --pt:#{$val};--pb:#{$val}; }
+  [pa-#{$key}]{ --p:1; --pt:#{$val};--pr:#{$val};--pb:#{$val};--pl:#{$val} }
+  [pt-#{$key}]{ --p:1; --pt:#{$val} }
+  [pr-#{$key}]{ --p:1; --pr:#{$val} }
+  [pb-#{$key}]{ --p:1; --pb:#{$val} }
+  [pl-#{$key}]{ --p:1; --pl:#{$val} }
 
   [mx-#{$key}]{ --ml:#{$val};--mr:#{$val} }
   [my-#{$key}]{ --mt:#{$val};--mb:#{$val} }
@@ -47,13 +47,13 @@ $grades: (
 }
 // 标号尺寸
 @for $i from 1 through 25 {
-  [px-#{$i}]{ --xpl:#{$i};--xpr:#{$i}; }
-  [py-#{$i}]{ --xpt:#{$i};--xpb:#{$i}; }
-  [pa-#{$i}]{ --xpt:#{$i};--xpr:#{$i};--xpb:#{$i};--xpl:#{$i}; }
-  [pt-#{$i}]{ --xpt:#{$i} }
-  [pr-#{$i}]{ --xpr:#{$i} }
-  [pb-#{$i}]{ --xpb:#{$i} }
-  [pl-#{$i}]{ --xpl:#{$i} }
+  [px-#{$i}]{ --p:1;--xpl:#{$i};--xpr:#{$i}; }
+  [py-#{$i}]{ --p:1;--xpt:#{$i};--xpb:#{$i}; }
+  [pa-#{$i}]{ --p:1;--xpt:#{$i};--xpr:#{$i};--xpb:#{$i};--xpl:#{$i}; }
+  [pt-#{$i}]{ --p:1;--xpt:#{$i} }
+  [pr-#{$i}]{ --p:1;--xpr:#{$i} }
+  [pb-#{$i}]{ --p:1;--xpb:#{$i} }
+  [pl-#{$i}]{ --p:1;--xpl:#{$i} }
 
   [ma-#{$i}]{ --xmt:#{$i};--xmr:#{$i};--xmb:#{$i};--xml:#{$i} }
   [mx-#{$i}]{ --xml:#{$i};--xmr:#{$i} }
@@ -63,28 +63,28 @@ $grades: (
   [mb-#{$i}]{ --xmb:#{$i} }
   [ml-#{$i}]{ --xml:#{$i} }
 
-  [nu-#{$i}]{ --xny:-#{$i} }
-  [nd-#{$i}]{ --xny:#{$i} }
-  [nr-#{$i}]{ --xnx:#{$i} }
-  [nl-#{$i}]{ --xnx:-#{$i} }
+  [nu-#{$i}]{ --fd:0;--xny:-#{$i} }
+  [nd-#{$i}]{ --fd:0;--xny:#{$i} }
+  [nr-#{$i}]{ --fd:0;--xnx:#{$i} }
+  [nl-#{$i}]{ --fd:0;--xnx:-#{$i} }
 }
 
 $nudges: (xs: .5, sm: 1, md: 1.5, lg: 2, xl: 3);
 @each $key, $val in $nudges {
-  [nu-#{$key}]{ --ny:-#{$val} }
-  [nd-#{$key}]{ --ny:#{$val} }
-  [nr-#{$key}]{ --nx:#{$val} }
-  [nl-#{$key}]{ --nx:-#{$val} }
+  [nu-#{$key}]{ --fd:0;--ny:-#{$val} }
+  [nd-#{$key}]{ --fd:0;--ny:#{$val} }
+  [nr-#{$key}]{ --fd:0;--nx:#{$val} }
+  [nl-#{$key}]{ --fd:0;--nx:-#{$val} }
 }
 
 [flip]{ --fd: 180deg}
 
 [mx-auto]{
   margin-left: auto;margin-right: auto;
-  display: block!important;
+  display: block;
 }
 
-[block],[row]{
+[block]{
   display: block
 }
 [inline-block],[inline]{

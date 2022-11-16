@@ -1,4 +1,4 @@
-// import './plugins/style-in-attributes'
+import './plugins/style-in-attributes'
 
 import Vue from 'vue'
 import App from './App.vue'

@@ -1,58 +1,35 @@
 const EXPRESS = require('express')
-const SESSION = require('express-session')
-const COOKIES = require('cookie-parser')
-const IPINFOS = require('express-ip')
-const CORS = require('cors')
-const ERROR = require('./config/error')
-const SERV = EXPRESS()
-const PORT = process.env.port || 3001
+const app = EXPRESS()
 
-const API = require('./router')
-// 创建连接池，并使其全局可用
-global.pool = require('./config/pool')
+const httpServer = require("http").createServer(app)
 
-SERV.use(EXPRESS.json())
-SERV.use(EXPRESS.urlencoded())
-SERV.use(COOKIES())
-// 处理 session 过期的情况
-SERV.use('',(req,res,next)=>{
-    if(req.method === 'OPTIONS')
-        // 跳过浏览器跨域请求前的 preflight 行为
-        next()
-    else{
-        // 如果请求中有 token，说明客户端已登录，则先检查 session 是否过期
-        if(true){
-            next()
-        }
-        else
-            next()
-    }
-})
-
-SERV.use(SESSION({
-    // 给 session id 的值加盐
-    secret: 'FooSudo',
-    // 给 session id 起个名字，默认是 connect.sid ，
-    name: 'SID',
-    // 如果线上环境能提供https访问，则 secure 可为 true
-    cookie: { httpOnly: true, secure: false, maxAge: 3000 }, // 会话等待时间为 3秒
-    resave: false, // 每次请求之后是否强制保存 session 到 sessionStore
-    saveUninitialized: true, // 是否将 session 的原始状态保存到 sessionStore
-    rolling: true, // 是否每次请求后都重置 cookie 中的 session id
-}))
-
-// 获取访问者 IP 相关信息，包括 ip 地址、国家、时区、城市等
-// 通过 req.ipInfo 获取，其属性有 ip, country, region(即省会或州), timezone, city 和 其他
-SERV.use(IPINFOS().getIpInfoMiddleware)
+// 将 json 字符串转为对象
+app.use(EXPRESS.json({limit: '50mb'}))
+// 将请求路径转为 req.query req.params 等
+app.use(EXPRESS.urlencoded({limit: '50mb'}))
+// 将 req.cookie 中的字符串转为 req.cookies 对象，一般只用于用户相关路由
+app.use(require('cookie-parser')())
 
 
+// CORS 规则，可根据路由设置不同的CORS规则，较少使用，需要时再看文档吧
+app.use(require('./config/config.cors'))
+// session 事关用户数据和权限，因此应置于路由中间件之前
+app.use(require('./config/config.session'))
+// 请求的登陆状态、权限控制等
+app.use(require('./config/config.authority'))
 
-// CORS 规则及对应的路由, * 可能不可用
-SERV.use(CORS({ credentials: true, origin:'http://localhost:8080', optionsSuccessStatus: 200 }), API)
-
+// 挂载 socket.io，通过 req.io 调用，req.io.emit 等效于 socket.emit
+app.use(require('./config/config.io')(httpServer))
+// 挂载路由
+app.use(require('./routes'))
 // 服务端错误的统一处理
-SERV.use(ERROR())
+app.use(require('./config/config.error'))
 
-SERV.listen(PORT,() => {
-    console.log('listening at http://localhost:' + PORT)
+// 将连接池挂载到应用实例上，通过 req.app.pool 或 res.app.pool 调用
+app.pool = require('./config/config.pool')
+
+
+httpServer.listen(3001,() => {
+    console.log('listening at http://localhost:' + 3001)
 })
+

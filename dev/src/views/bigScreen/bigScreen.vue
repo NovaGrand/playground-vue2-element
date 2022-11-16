@@ -1,65 +1,49 @@
 <template>
-    <div class="bigScreen" fill>
-        <header black bg></header>
-        <aside foo></aside>
-        <main class="container">
-            <div ref="scaleBox" class="scaleBox" foo>
-
-            </div>
-        </main>
+    <div class="bigScreen">
+        <ratioBox class="reference">
+            111
+        </ratioBox>
     </div>
 </template>
 
 <script>
+import ratioBox from './ratioBox'
 export default {
     name: "BigScreen",
-    mounted() {
-        let scaleBox = this.$refs.scaleBox
-        let container = scaleBox.parentElement
-
-        this.ob = new ResizeObserver(entries => {
-            let w = container.offsetWidth
-            let h = container.offsetHeight
-            console.log({ w, h })
-        })
-        this.ob.observe(container)
-        // console.log(scaleBox.parentElement.offsetWidth)
+    components:{
+        ratioBox
     },
-    beforeUnmount(){
-        this.ob.disconnect()
+    mounted() {
+
     },
     data(){
         return {
 
         }
+    },
+    methods:{
+        scale(p){
+
+        }
+    },
+
+    props:{
+
     }
 }
 </script>
 
 <style scoped lang="scss">
-div.scaleBox{
-    //display: none;
-    width: 2560px;
-    height: 1080px;
-    background-size: cover;
-    background: url("./u2716.png");
-}
-div.bigScreen{
-    position: relative;
-    header{
-        height: 70px;
-    }
-    aside{
-        height: calc(100vh - 70px);
-        width: 250px;
-    }
-    main.container{
-        position: absolute;
-        left: 250px;top: 70px;
-        width: calc(100vw - 250px);
-        height: calc(100vh - 70px);
-        background-color: #030E25;
-        overflow: hidden;
+div.bigScreen {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    .reference{
+        color: white;
+        font-size: 30px;
+        background: url("./2560.jpg");
     }
 }
+
+
 </style>

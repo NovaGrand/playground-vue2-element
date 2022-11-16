@@ -16,9 +16,12 @@
     "express": "^4.17.3",
     "express-ip": "^1.0.4",
     "express-session": "^1.17.2",
+    "formidable": "^2.0.1",
+    "multiparty": "^4.2.3",
     "mysql2": "^2.3.3",
     "node-polyfill-webpack-plugin": "^1.1.4",
     "nodemon": "^2.0.20",
+    "socket.io": "^4.5.3",
     "svg-captcha": "^1.4.0",
     "webpack-node-externals": "^3.0.0"
   },

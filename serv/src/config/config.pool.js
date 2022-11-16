@@ -1,5 +1,5 @@
 
-const pool = require ('mysql2').createPool({
+const configPool = require ('mysql2').createPool({
     host: 'localhost',
     database: 'herneck',
     user: 'root',
@@ -11,7 +11,7 @@ const pool = require ('mysql2').createPool({
 })
 
 process.on('exit', async (code) => {
-    try { await pool.end() } catch (e) {}
+    try { await configPool.end() } catch (e) {}
 })
 
-module.exports = pool
+module.exports = configPool
