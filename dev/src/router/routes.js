@@ -31,6 +31,11 @@ export default [
         name: 'Express 测试',
         component: ()=>import('@/views/express')
     },
+    {
+        path: '/echarts',
+        name: 'Echarts',
+        component: ()=>import('@/views/Echarts')
+    },
     // {
     //     path: '/haohai',
     //     name: 'haohai',
