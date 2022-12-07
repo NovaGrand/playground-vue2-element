@@ -32,7 +32,7 @@ export default [
         component: ()=>import('@/views/express')
     },
     {
-        path: '/Echarts',
+        path: '/echarts',
         name: 'Echarts',
         component: ()=>import('@/views/Echarts')
     },
