@@ -36,6 +36,11 @@ export default [
         name: 'Echarts',
         component: ()=>import('@/views/Echarts')
     },
+    {
+        path: '/Mock',
+        name: 'Mock',
+        component: ()=>import('@/views/Mock')
+    },
     // {
     //     path: '/haohai',
     //     name: 'haohai',

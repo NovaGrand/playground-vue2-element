@@ -20,66 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15d97a5e-4940-45cd-bf41-52aa6e0464be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dev/src/router/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/utils/load.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/bigFileUpload/Blob.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/bigFileUpload/aaa.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/bigFileUpload/download/download.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/bigFileUpload/download/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/bigScreen/ratioBox/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/bigScreen/ratioBox/ratioBox.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/express/express.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/express/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/assets/emergy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/assets/locate_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/assets/locate_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/assets/locate_user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/assets/tool.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/assets/worker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/assets/应急管理.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/assets/赞.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/baiduMap.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/mixins/Addons.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/mixins/ContextMenu.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/mixins/Geocoder.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/mixins/Utiles.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/upwork/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/upwork/upwork.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/websocket/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/src/views/websocket/websocket.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/vue.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serv/src/config/config.authority.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serv/src/config/config.cors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serv/src/config/config.io.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serv/src/config/config.session.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serv/src/routes/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serv/src/routes/bigFileUpload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serv/src/routes/socket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serv/src/routes/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/mock/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/Mock/Mock.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/src/views/Mock/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/plugins/style-in-attributes/src/padding&amp;margin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/plugins/style-in-attributes/src/padding&amp;margin.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/HomeView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/bigFileUpload/bigFileUpload.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/bigFileUpload/bigFileUpload.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/bigFileUpload/files/files.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/bigFileUpload/dropBox/dropBox.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/bigFileUpload/files/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/bigFileUpload/dropBox/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/router/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/src/views/bigScreen/bigScreen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/bigScreen/bigScreen.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/src/views/superMap/superMap.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/superMap/superMap.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/src/views/bigScreen/ratioBox/ratioBox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/dev/src/views/bigScreen/ratioBox/ratioBox.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/dev/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serv/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/serv/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serv/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/serv/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serv/src/config/error.js" beforeDir="false" afterPath="$PROJECT_DIR$/serv/src/config/config.error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serv/src/config/pool.js" beforeDir="false" afterPath="$PROJECT_DIR$/serv/src/config/config.pool.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serv/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/serv/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serv/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/serv/src/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serv/src/router/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/serv/src/routes/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serv/src/util/pool.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/serv/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/serv/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,8 +41,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -116,28 +67,28 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dev/src/views/superMap/baiduMap/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MewCC" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettier.files.pattern" value="{**/*,*}.{js,ts,jsx,tsx,.vue}" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\ProgramFiles\nodejs\node_global\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\Git\NovaGrand\playground-vue2-element\dev\src\mock" />
+      <recent name="D:\Desktop\Git\NovaGrand\playground-vue2-element\dev\src\views\bigFileUpload" />
+      <recent name="D:\Desktop\Git\NovaGrand\playground-vue2-element\dev\src\views\superMap\baiduMap" />
+      <recent name="D:\Desktop\Git\NovaGrand\playground-vue2-element\dev\src\views\bigScreen" />
+      <recent name="C:\Users\wangwei\Desktop\刘博\Git\NovaGrand\playground-vue2-element\dev\src\views\haohai" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Desktop\Git\NovaGrand\playground-vue2-element\dev\src\views\superMap\baiduMap\assets" />
       <recent name="D:\Desktop\Git\NovaGrand\playground-vue2-element\dev\src\views\bigFileUpload\download" />
       <recent name="C:\Users\wangwei\Desktop\刘博\Git\NovaGrand\playground-vue2-element\dev\src\views" />
       <recent name="C:\Users\wangwei\Desktop\刘博\Git\NovaGrand\playground-vue2-element\dev\src\plugins" />
       <recent name="C:\Users\wangwei\Desktop\刘博\Git\NovaGrand\playground-vue2-element\dev\src\plugins\style-in-attributes" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Desktop\Git\NovaGrand\playground-vue2-element\dev\src\views\bigFileUpload" />
-      <recent name="D:\Desktop\Git\NovaGrand\playground-vue2-element\dev\src\views\superMap\baiduMap" />
-      <recent name="D:\Desktop\Git\NovaGrand\playground-vue2-element\dev\src\views\bigScreen" />
-      <recent name="C:\Users\wangwei\Desktop\刘博\Git\NovaGrand\playground-vue2-element\dev\src\views\haohai" />
-      <recent name="C:\Users\wangwei\Desktop\刘博\Git\NovaGrand\playground-vue2-element\dev\src\views\bigFileUpload" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -257,6 +208,27 @@
       <workItem from="1668231778553" duration="8081000" />
       <workItem from="1668243998007" duration="762000" />
       <workItem from="1668576238092" duration="4000" />
+      <workItem from="1668668986942" duration="7000" />
+      <workItem from="1668839649535" duration="25000" />
+      <workItem from="1668969049539" duration="154000" />
+      <workItem from="1669391043581" duration="70000" />
+      <workItem from="1669816081960" duration="120000" />
+      <workItem from="1669956709297" duration="2369000" />
+      <workItem from="1670013060913" duration="593000" />
+      <workItem from="1670107960995" duration="5257000" />
+      <workItem from="1670122958382" duration="1764000" />
+      <workItem from="1670165374035" duration="5352000" />
+      <workItem from="1670175916624" duration="8035000" />
+      <workItem from="1670191669057" duration="6688000" />
+      <workItem from="1670214743603" duration="2598000" />
+      <workItem from="1670276702711" duration="6195000" />
+      <workItem from="1670294219450" duration="11531000" />
+      <workItem from="1670365864655" duration="1361000" />
+      <workItem from="1670382383987" duration="9727000" />
+      <workItem from="1670418991550" duration="1045000" />
+      <workItem from="1671637183150" duration="9000" />
+      <workItem from="1672689837098" duration="591000" />
+      <workItem from="1674221039128" duration="69000" />
     </task>
     <servers />
   </component>
@@ -280,14 +252,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="864" y="774" width="785" height="340" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1666260145596" />
-    <state x="1061" y="456" key="FileChooserDialogImpl" timestamp="1666747592022">
+    <state x="1061" y="456" key="FileChooserDialogImpl" timestamp="1669957465968">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1666747592022" />
-    <state x="649" y="589" key="SettingsEditor" timestamp="1666260146242">
+    <state x="1061" y="456" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1669957465968" />
+    <state x="1046" y="583" key="SettingsEditor" timestamp="1669958067138">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="649" y="589" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1666260146242" />
+    <state x="1046" y="583" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1669958067138" />
     <state x="1218" y="448" key="run.anything.popup" timestamp="1667783596005">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

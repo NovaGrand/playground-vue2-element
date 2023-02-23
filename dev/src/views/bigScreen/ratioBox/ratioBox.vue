@@ -3,36 +3,32 @@
 </template>
 
 <script>
+function throttle(fn, delay) {
+    let flag = true
+    return function (...args) {
+        if (!flag)
+            return
+        flag = false
+        let t = setTimeout(() => {
+            fn(...args)
+            flag = true
+            clearTimeout(t)
+        }, delay)
+    }
+}
 export default {
     name: "ratioBox",
     mounted() {
-        function throttle(fn, delay) {
-            let flag = true
-            return function (...args) {
-                if (!flag)
-                    return
-                flag = false
-                let t = setTimeout(() => {
-                    fn(...args)
-                    flag = true
-                    clearTimeout(t)
-                }, delay)
-            }
-        }
-
-        let container = this.$el.parentElement
-        container.style.display = 'flex'
-        container.style.alignItems = 'center'
-        container.style.justifyContent = 'center'
-
+        let p = this.$el.parentElement
+        p.style='display:flex!important;align-items:center!important;justify-content:center!important'
         this.ob = new ResizeObserver(throttle(entries => {
-            let w = container.offsetWidth
-            let h = container.offsetHeight
+            let w = p.offsetWidth
+            let h = p.offsetHeight
             this.scale({ w, h })
         },100))
-        this.ob.observe(container)
+        this.ob.observe(p)
     },
-    beforeUnmount(){
+    beforeDestroy(){
         this.ob.disconnect()
     },
     data(){
@@ -44,21 +40,15 @@ export default {
     methods:{
         scale({ w, h }){
             if(w / h > this.w / this.h)
-                // 如果容器比大屏宽，则按高度缩放
-                this.index = h / this.h
+                this.index = h / this.h  // 如果容器比大屏宽，则按高度缩放
             else
-                // 如果容器比大屏高，则按宽度缩放
-                this.index = w / this.w
+                this.index = w / this.w // 如果容器比大屏高，则按宽度缩放
             if(!this.inited) this.inited = true
         },
     },
     computed:{
-        w(){
-            return parseInt(this.width)
-        },
-        h(){
-            return parseInt(this.height)
-        },
+        w(){ return parseInt(this.width) },
+        h(){ return parseInt(this.height) },
         style(){
             return`width:${this.w}px;height:${this.h}px;transform:scale(${this.index});background-size: cover;flex-shrink: 0;`
         }
